@@ -19,6 +19,7 @@ const verifyLink = async (req, res, next) => {
         next()
     } else {
         sendMessage(res, 'This isn\' a valid url')
+        return
     }
 }
 
