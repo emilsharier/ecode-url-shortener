@@ -9,13 +9,10 @@ const shortenUrl = async (req, res) => {
             original_url: req.body.Body,
             short_url: short
         })
-        if(result) {
-            sendMessage(res, `http://ecode.pw/${short}`)
-        } else {
-            sendMessage(res, 'Uh oh! Something went wrong')
-        }
+        sendMessage(res, `http://ecode.pw/${short}`)
         return
     } catch (ex) {
+        sendMessage(res, 'Sorry for the inconvenience 😐. An error occured.')
         console.log(ex)
         throw ex
     }

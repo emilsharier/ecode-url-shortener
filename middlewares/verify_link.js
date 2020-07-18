@@ -15,7 +15,6 @@ const verifyLink = async (req, res, next) => {
     let url = req.body.Body
     console.log(url)
     if (validURL(url)) {
-        console.log('link is verified')
         next()
     } else {
         sendMessage(res, 'This isn\' a valid url')
