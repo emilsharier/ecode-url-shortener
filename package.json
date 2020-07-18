@@ -1,0 +1,34 @@
+{
+  "name": "ecode-url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.3",
+    "shortid": "^2.2.15",
+    "twilio": "^3.48.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -r dotenv/config index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilsharier/ecode-url-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilsharier/ecode-url-shortener/issues"
+  },
+  "homepage": "https://github.com/emilsharier/ecode-url-shortener#readme"
+}
