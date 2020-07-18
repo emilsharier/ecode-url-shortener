@@ -12,6 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
+require('./routes/index')(app)
+
 // Listening here
 app.listen(PORT, () => {
     console.log(`Server up and running at ${PORT}`)
