@@ -14,6 +14,7 @@ const shortenUrl = async (req, res) => {
         } else {
             sendMessage(res, 'Uh oh! Something went wrong')
         }
+        return
     } catch (ex) {
         console.log(ex)
         throw ex

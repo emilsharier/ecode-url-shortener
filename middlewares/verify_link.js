@@ -21,6 +21,7 @@ const verifyLink = async (req, res, next) => {
         sendMessage(res, 'This isn\' a valid url')
         return
     }
+    return
 }
 
 module.exports = verifyLink
