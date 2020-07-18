@@ -9,7 +9,7 @@ const shortenUrl = async (req, res) => {
             original_url: req.body.Body,
             short_url: short
         })
-        sendMessage(res, `http://ecode.pw/${short}`)
+        sendMessage(res, process.env.DOMAIN + short)
         return
     } catch (ex) {
         sendMessage(res, 'Sorry for the inconvenience 😐. An error occured.')

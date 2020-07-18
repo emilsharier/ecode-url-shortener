@@ -13,7 +13,7 @@ function validURL(str) {
 const verifyLink = async (req, res, next) => {
 
     let url = req.body.Body
-    console.log(url)
+    // console.log(url)
     if (validURL(url)) {
         next()
     } else {
